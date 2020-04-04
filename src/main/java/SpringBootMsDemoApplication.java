@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 	    String home(@PathVariable("name") String name) {
 	        return "Hello "+name +"!";
 	    }
+		
+	    @RequestMapping(value="/", method = RequestMethod.GET)
+	    String home() {
+	        return "Hello Sample Java Application..........";
+	    }
 
 	    public static void main(String[] args) throws Exception {
 	        SpringApplication.run(SpringBootMsDemoApplication.class, args);

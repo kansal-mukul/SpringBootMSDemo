@@ -1,0 +1,7 @@
+---
+applications:
+- name: sample-app
+  path: ../storage/demo.jar
+  disk: 1G
+  memory: 1G
+  random-route: true  
